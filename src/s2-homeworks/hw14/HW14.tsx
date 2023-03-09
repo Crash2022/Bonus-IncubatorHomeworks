@@ -39,7 +39,7 @@ const HW14 = () => {
                 // сохранить пришедшие данные
                 setTechs(res!.data.techs)
                 // console.log(res)
-                //
+                setLoading(false)
             })
     }
 
@@ -50,7 +50,6 @@ const HW14 = () => {
         // добавить/заменить значение в квери урла
         // setSearchParams()
         setSearchParams(value)
-        //
     }
 
     useEffect(() => {
