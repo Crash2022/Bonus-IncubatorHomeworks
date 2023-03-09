@@ -52,7 +52,6 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
                 if (res) {
                     setTechs(res.data.techs)
@@ -67,7 +66,7 @@ const HW15 = () => {
         setCount(newCount)
 
         sendQuery({page: newPage, count: newCount})
-        setSearchParams({page: newPage.toString(), count: newCount.toString()})
+        setSearchParams({page: newPage.toString()})
     }
 
     const onChangeSort = (newSort: string) => {
