@@ -67,7 +67,7 @@ const HW14 = () => {
 
     return (
         <div id={'hw14'} style={{marginBottom: '30px'}}>
-            <div className={s2.hwTitle}>Homework #14</div>
+            <div className={s2.hwTitle} style={{fontWeight: 'bold'}}>Homework #14</div>
 
             <div className={s2.hw}>
                 <SuperDebouncedInput
