@@ -37,7 +37,8 @@ const HW14 = () => {
                 // делает студент
 
                 // сохранить пришедшие данные
-
+                setTechs(res!.data.techs)
+                // console.log(res)
                 //
             })
     }
