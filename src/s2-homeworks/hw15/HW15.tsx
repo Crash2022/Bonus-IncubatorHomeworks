@@ -66,7 +66,7 @@ const HW15 = () => {
         setCount(newCount)
 
         sendQuery({page: newPage, count: newCount})
-        setSearchParams({page: newPage.toString()})
+        setSearchParams({page: newPage.toString(), count: newCount.toString()})
     }
 
     const onChangeSort = (newSort: string) => {
