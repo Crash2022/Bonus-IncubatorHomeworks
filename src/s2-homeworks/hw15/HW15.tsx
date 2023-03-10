@@ -55,6 +55,7 @@ const HW15 = () => {
                 // сохранить пришедшие данные
                 if (res) {
                     setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
                 }
                 setLoading(false)
             })
@@ -72,8 +73,8 @@ const HW15 = () => {
     const onChangeSort = (newSort: string) => {
         // делает студент
 
-        // setSort()
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
 
         // sendQuery()
         // setSearchParams()
@@ -91,7 +92,6 @@ const HW15 = () => {
             <div id={'hw15-tech-' + t.id} className={s.tech}>
                 {t.tech}
             </div>
-
             <div id={'hw15-developer-' + t.id} className={s.developer}>
                 {t.developer}
             </div>
